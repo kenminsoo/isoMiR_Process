@@ -1,0 +1,1 @@
+cat all_samples.txt | parallel -j 1 "echo {} > {}.txt; perl $QuickMIRSeq/QuickMIRSeq.pl {}.txt run2.config; mv output2 {}"
